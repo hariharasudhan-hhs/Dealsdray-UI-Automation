@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+    <test name="chromeTest">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <classes>
+            <class name="ui.UiTesting" />
+        </classes>
+    </test>
+    <test name="edgeTest">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="ui.UiTesting" />
+        </classes>
+    </test>
+</suite>
+
